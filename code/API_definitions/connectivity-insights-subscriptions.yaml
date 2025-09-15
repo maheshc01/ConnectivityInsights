@@ -62,7 +62,7 @@ info:
       These rules apply for subscription:
 
       - If 3-legged access token is used, the POST and GET{id} requests &
-      responses must NOT provide thev``phoneNumber``. For GET (list) only
+      responses must NOT provide the ``phoneNumber``. For GET (list) only
       subscription(s) for this exactly phone number is/are retrieved (implicit
       filtering).
       - If 2-legged access token is used, for POST and GET{id}, the presence
@@ -189,7 +189,7 @@ paths:
                 Important: this endpoint is to be implemented by the API
                 consumer.The Connectivity Insights server will call this
                 endpoint whenever a connectivity event occurs that changes
-                the netowrk's ability to meet the application's demands for
+                the network's ability to meet the application's demands for
                 a given device.
               operationId: postNotification
               parameters:
