@@ -40,9 +40,20 @@ The API definition(s) are based on
   - [[View it on Swagger Editor]](https://camaraproject.github.io/swagger-ui/?url=https://raw.githubusercontent.com/camaraproject/ConnectivityInsights/r3.2/code/API_definitions/connectivity-insights.yaml)
   - [[OpenAPI]](https://raw.githubusercontent.com/camaraproject/ConnectivityInsights/r3.2/code/API_definitions/connectivity-insights.yaml)
 
+### Added
+
+* Added error response documentation in `info.description`
+
 ### Changed
 
+* Adjusted x-correlator pattern as defined in CAMARA Commonalities
+* Updated documentation regarding device identifiers in responses and added DeviceResponse object to limit device identifiers in responses to exactly one
 * Align with latest Commonalities in [#166](https://github.com/camaraproject/ConnectivityInsights/issues/166)
+
+### Removed
+
+* Removed AUTHENTICATION_REQUIRED error
+* Removed the IDENTIFIER_MISMATCH error code option from 422 responses
 
 ## connectivity-insights-subscriptions v0.6.0
 
@@ -52,13 +63,23 @@ The API definition(s) are based on
   - [[View it on ReDoc]](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/camaraproject/ConnectivityInsights/r3.2/code/API_definitions/connectivity-insights-subscriptions.yaml&nocors)
   - [[View it on Swagger Editor]](https://camaraproject.github.io/swagger-ui/?url=https://raw.githubusercontent.com/camaraproject/ConnectivityInsights/r3.2/code/API_definitions/connectivity-insights-subscriptions.yaml)
   - [[OpenAPI]](https://raw.githubusercontent.com/camaraproject/ConnectivityInsights/r3.2/code/API_definitions/connectivity-insights-subscriptions.yaml)
+### Added
+
+* Added error response documentation in `info.description`
 
 ### Changed
 
+* Adjusted x-correlator pattern as defined in CAMARA Commonalities
+* Updated documentation regarding device identifiers in responses and added DeviceResponse object to limit device identifiers in responses to exactly one
+* Subscription event type `subscription-ends` renamed to `subscription-ended`
 * Align with latest Commonalities in [#166](https://github.com/camaraproject/ConnectivityInsights/issues/166)
 
+### Removed
 
-**Full Changelog**: https://github.com/camaraproject/connectivityInsights/compare/r3.1...r3.2
+* Removed AUTHENTICATION_REQUIRED error
+* Removed the IDENTIFIER_MISMATCH error code option from 422 responses
+
+**Full Changelog**: https://github.com/camaraproject/connectivityInsights/compare/r2.2...r3.2
 
 # r3.1
 ## Release Notes
